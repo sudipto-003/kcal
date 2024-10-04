@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: k8s-abc
 repo: github.com/sudipto-003/kcal
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: toad.d3s.io
+  group: calc
+  kind: Sum
+  path: github.com/sudipto-003/kcal/api/v1
+  version: v1
 version: "3"

@@ -1,0 +1,13 @@
+apiVersion: calc.toad.d3s.io/v1
+kind: Sum
+metadata:
+  labels:
+    app.kubernetes.io/name: sum-1
+    app.kubernetes.io/instance: sum-sample-1
+    app.kubernetes.io/part-of: k8s-abc
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: k8s-abc
+  name: sum-sample-1
+spec:
+  argument1: 12
+  argument2: 23

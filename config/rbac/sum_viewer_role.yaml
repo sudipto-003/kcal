@@ -1,0 +1,27 @@
+# permissions for end users to view sums.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: sum-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: k8s-abc
+    app.kubernetes.io/part-of: k8s-abc
+    app.kubernetes.io/managed-by: kustomize
+  name: sum-viewer-role
+rules:
+- apiGroups:
+  - calc.toad.d3s.io
+  resources:
+  - sums
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - calc.toad.d3s.io
+  resources:
+  - sums/status
+  verbs:
+  - get
