@@ -1,8 +1,8 @@
 # k8s-abc
-Very basic k8s custom controller example.
+// TODO(user): Add simple overview of use/purpose
 
 ## Description
-An introductional k8s controller project, to showcase the basics of manager, controller and webhook.
+// TODO(user): An in-depth paragraph about your project and overview of use
 
 ## Getting Started
 
@@ -19,8 +19,8 @@ An introductional k8s controller project, to showcase the basics of manager, con
 make docker-build docker-push IMG=<some-registry>/k8s-abc:tag
 ```
 
-**NOTE:** This image ought to be published in the personal registry you specified.
-And it is required to have access to pull the image from the working environment.
+**NOTE:** This image ought to be published in the personal registry you specified. 
+And it is required to have access to pull the image from the working environment. 
 Make sure you have the proper permission to the registry if the above commands don’t work.
 
 **Install the CRDs into the cluster:**
@@ -35,7 +35,7 @@ make install
 make deploy IMG=<some-registry>/k8s-abc:tag
 ```
 
-> **NOTE**: If you encounter RBAC errors, you may need to grant yourself cluster-admin
+> **NOTE**: If you encounter RBAC errors, you may need to grant yourself cluster-admin 
 privileges or be logged in as admin.
 
 **Create instances of your solution**
@@ -111,3 +111,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+

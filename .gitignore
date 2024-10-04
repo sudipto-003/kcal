@@ -23,7 +23,6 @@ go.work
 # editor and IDE paraphernalia
 .idea
 .vscode
-.zed
 *.swp
 *.swo
 *~
